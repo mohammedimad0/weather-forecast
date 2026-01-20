@@ -18,19 +18,19 @@ document.querySelector(".desc").innerHTML=data.weather[0].main;
 
 
 if(data.main.temp>=10 && data.main.temp<=35 || data.weather[0].main=="Clear"){
-  imgg.src="clear.png";
+  imgg.src="asset/clear.png";
 }
 if(data.main.temp>=-20 && data.main.temp<=10){
-  imgg.src="snow.png";
+  imgg.src="asset/snow.png";
 }
 if(data.weather[0].main=="Clouds"  ){
-  imgg.src="pikachu.png";
+  imgg.src="asset/pikachu.png";
 }
 if(data.weather[0].main=="rain"){
-  imgg.src="water.png";
+  imgg.src="asset/water.png";
 }
 if(data.main.temp>=35 && data.main.temp<=100 ||data.main.humidity>=72 ){
-  imgg.src="chailazard.png";
+  imgg.src="asset/chailazard.png";
 }
 
  }
